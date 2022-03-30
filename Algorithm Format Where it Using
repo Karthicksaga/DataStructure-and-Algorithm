@@ -1,0 +1,19 @@
+#algorithm
+
+##Time Complexity : O(n * n)
+#Space Complexity : 0(n)
+#best Case: O(n) - when array is Already sorted
+## worst Case : O(n*2)
+
+##Advantage
+
+##Disadvantage
+
+#Why we use the this algorithm
+
+#Application
+
+#Comparision, Where we use this
+
+
+#Where it can be used : Computer Graphics
