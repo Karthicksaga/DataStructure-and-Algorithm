@@ -1,0 +1,31 @@
+def parathesis_checking(expression):
+    
+    
+    paranthesis = False
+    result = []
+    for i in range(len(expression)):
+        
+        if expression[i] in "{[(":
+            result.append(expression[i])
+            print(len(result))
+            
+        elif expression[i] in ")}]":
+            print("Entered into the else Section")
+            if len(result) == 0:
+                return False
+                
+            current_char = result.pop()
+            if current_char == "(" and expression[i] != ")":
+                return False
+            elif current_char == "{" and expression[i] != "}":
+                return False
+                    
+            elif current_char == "[" and expression[i] != "]":
+                return False
+    
+    if len(result) == 0:
+        return True
+    return False
+                
+
+print(parathesis_checking("{{{{}}}"))
